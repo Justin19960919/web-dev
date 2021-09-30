@@ -2,6 +2,8 @@
 body{
 	background-color: black;
 	font-family: sans-serif;
+	padding-left: 16px;
+	padding-right: 16px;
 }
 
 .wd-text-white{
@@ -66,11 +68,18 @@ body{
 	font-size: 13px;
 }
 
+
 /* ---------- */
+.wd-bookmarks{
+	position: relative;
+}
+
+
 
 /*for the whole bookmark*/
 .wd-bookmark-sample{
 	margin-top: 12px;
+	display: inline-block;
 }
 
 
@@ -84,7 +93,6 @@ body{
 	margin-top: 12px;
 	margin-right: 12px;
 	float: left;
-
 }
 
 
