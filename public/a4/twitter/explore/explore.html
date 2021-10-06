@@ -1,0 +1,201 @@
+<!--font awesome-->
+<!--https://docs.google.com/presentation/d/1H2DK-UDJd-iHOpgKGkqycXtNMhCQGv26TsXC8brMM_o/edit#slide=id.g40e9ecc724_0_0-->
+<!--bootstrap-->
+<!--https://docs.google.com/presentation/d/1Vjc1ePHtNMKPWqQUSqBVK-1Jd_5ByngOj6jTUcNXY-c/edit#slide=id.g40ec69bab2_0_20-->
+
+
+<!--
+//middle
+search: <i class="fas fa-search"></i>
+cog: <i class="fa fa-cog fa-2x"></i>
+
+//right
+
+
+//general
+verified: <i class="fas fa-check-circle"></i>
+
+-->
+
+
+<html>
+  <head>
+    <title>Explore page</title>
+    <!--    bootstrap cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!--    font awesome cdn-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <!--  my css-->
+    <link href="css/explore.css" rel="stylesheet"/>
+  </head>
+
+<!--  <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">-->
+
+  <body>
+    <div class="container">
+      <div class="row">
+
+<!--        left-->
+<!--        needs to align center and make text and icon inline-->
+        <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-2 col-xxl-2">
+          <!--list of hyperlinks-->
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action aria-current="true"">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-home"></i>
+              <span class="d-none d-xl-block">Home</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action active">
+                <i class="fas fa-hashtag"></i>
+                <span class="d-none d-xl-block">Explore</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-bell"></i>
+              <span class="d-none d-xl-block">Notifications</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-envelope"></i>
+              <span class="d-none d-xl-block">Messages</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-bookmark"></i>
+              <span class="d-none d-xl-block">Bookmarks</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-list"></i>
+              <span class="d-none d-xl-block">Lists</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-user"></i>
+              <span class="d-none d-xl-block">Profile</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-info-circle"></i>
+              <span class="d-none d-xl-block">More</span>
+            </a>
+            <button class="btn btn-md btn-primary rounded-pill mt-1">Tweet</button>
+          </div>
+        </div>
+
+
+<!--        middle-->
+        <div class="col-10 col-sm-10 col-md-11 col-lg-9 col-xl-6 col-xxl-6">
+<!--        search bar-->
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">@</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+
+
+          <!--          tabs-->
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">For you</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trending</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-sm-block d-none" href="#">Entertaining</a>
+              </li>
+            </ul>
+<!--          need to add text in imgm but somehow will appear at strange places-->
+          <img class="img-fluid" src="images/spaceX.jpg" alt="popular image">
+
+<!--          popular tweets-->
+
+          <div class="row wd-light-gray-border">
+            <div class="col-9">
+              <p class="wd-light-gray wd-opacity-70">Web Development</p>
+              <p class="font-weight-bold">ReactJS <i class="fas fa-check-circle"></i><span class="wd-light-grey"> - 2h</span></p>
+              <p class="font-weight-bold">
+                React.js is a component based front end library that makes it very
+                easy to build single page applications or SPAs
+              </p>
+            </div>
+
+            <div class="col-3">
+              <img class="wd-tweet-img" src="images/react.png" alt="react image">
+            </div>
+
+          </div>
+
+          <div class="wd-post-2">
+
+
+          </div>
+
+          <div class="wd-post-3">
+
+
+          </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+<!--        right hand side-->
+<!--        sec3 disappears after we get to medium-->
+        <div class="d-none d-lg-block col-lg-2 col-xl-4 col-xxl-4">
+<!--            -->
+          <ul class="list-group">
+            <li class="list-group-item justify-content-between align-items-center">
+                <div class="row">
+                  <div class="col-lg-3 col-2">
+                    <img class="wd-recommend-companies" src="images/java.png">
+                  </div>
+
+                  <div class="col-lg-6 col-4">
+                    <p>Java
+                      <br>
+                      <small>@Java</small>
+                    </p>
+                  </div>
+
+                  <div class="col-lg-3 col-6">
+                    <button class="btn btn-md btn-primary wd-follow-button">Follow</button>
+                  </div>
+                </div>
+            </li>
+
+          </ul>
+
+
+
+
+
+
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+  </body>
+
+</html>
+
+
