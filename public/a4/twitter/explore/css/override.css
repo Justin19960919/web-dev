@@ -1,0 +1,144 @@
+/*
+Background colors
+Button colors
+Font colors
+Icon colors
+Highlight colors
+Border colors, widths and styles
+Input field colors
+*/
+
+
+body{
+  background-color: black;
+}
+
+/*additional styling for left navigation*/
+.wd-list-twitter-icon{
+  font-size: 25px;
+  padding-botton: 5px;
+}
+
+
+.wd-list-item{
+  background-color: black;
+  color: white;
+  border:none;
+  font-size: 18px;
+}
+
+
+
+/*middle*/
+.wd-darkgray{
+  background-color: rgba(173,181,189, 0.4);
+}
+
+.wd-text-darkgray{
+  color: rgba(173,181,189, 0.4);
+}
+
+
+.wd-text-white-color{
+  color: white;
+}
+
+.wd-search-icon-add{
+  color: lightgray;
+  opacity:0.5;
+  padding-top:2px;
+}
+
+
+.wd-search-cog-margin{
+  margin-left: 10px;
+}
+
+/*navtabs*/
+
+.wd-nav-tab{
+  border:none;
+}
+
+.wd-nav-link-added{
+  color: lightgray;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+
+
+
+.wd-light-gray-border-half{
+  border:1px solid rgba(211,211,211, 0.5);
+}
+
+
+.wd-light-gray-border-upper{
+  border-top:1px solid rgba(211,211,211, 0.5);
+}
+
+
+.wd-light-gray-border-bottom{
+  border-bottom:1px solid rgba(211,211,211, 0.5);
+}
+
+
+
+/*tweets*/
+.wd-tweet-title{
+  color: white;
+  font-size: 20px;
+}
+
+
+/*who to follow*/
+.wd-follow-title{
+  color: white;
+  font-size: 20px;
+}
+
+.wd-small-decor{
+  width: 20px;
+  height: 10px;
+}
+
+
+.wd-rounded{
+  border-radius: 20px;
+ }
+
+.wd-no-underline{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

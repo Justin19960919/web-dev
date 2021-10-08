@@ -1,0 +1,302 @@
+<!--font awesome-->
+<!--https://docs.google.com/presentation/d/1H2DK-UDJd-iHOpgKGkqycXtNMhCQGv26TsXC8brMM_o/edit#slide=id.g40e9ecc724_0_0-->
+<!--bootstrap-->
+<!--https://docs.google.com/presentation/d/1Vjc1ePHtNMKPWqQUSqBVK-1Jd_5ByngOj6jTUcNXY-c/edit#slide=id.g40ec69bab2_0_20-->
+
+
+<!--some problems
+
+cant fit in one row in left
+grey bolder out of bounds in middle
+will compress strangely in right
+-->
+
+
+
+
+
+<html>
+  <head>
+    <title>Challenge</title>
+    <!--    bootstrap cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!--    font awesome cdn-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <!--  my css-->
+    <link href="css/explore.css" rel="stylesheet"/>
+<!--    challenge override css-->
+    <link href="css/override.css" rel="stylesheet"/>
+  </head>
+
+<!--  <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">-->
+
+  <body class="mt-2">
+    <div class="container">
+      <div class="row">
+<!--        left-->
+<!--        needs to align center and make text and icon inline-->
+        <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-2 col-xxl-2">
+          <!--list of hyperlinks-->
+          <div class="list-group">
+<!--            twitter-->
+            <a href="#" class="list-group-item list-group-item-action aria-current=true wd-list-item">
+              <i class="fab fa-twitter wd-list-twitter-icon"></i>
+            </a>
+<!--            Home-->
+            <a href="#" class="list-group-item list-group-item-action wd-list-item">
+              <i class="fas fa-home wd-float me-3"></i>
+              <span class="d-none d-xl-block">
+                Home
+              </span>
+            </a>
+<!--Explore-->
+            <a href="#" class="list-group-item list-group-item-action wd-list-item">
+              <i class="fas fa-hashtag wd-float me-3"></i>
+              <span class="d-none d-xl-block">
+                Explore
+              </span>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action wd-list-item">
+              <i class="fas fa-bell wd-float me-3"></i>
+              <span class="d-none d-xl-block">
+                Notifications
+              </span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action wd-list-item">
+              <i class="fas fa-envelope wd-float me-3"></i>
+              <span class="d-none d-xl-block">
+                Messages
+              </span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action wd-list-item">
+              <i class="fas fa-bookmark wd-float me-3"></i>
+              <span class="d-none d-xl-block">
+                Bookmarks
+              </span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action wd-list-item">
+              <i class="fas fa-list wd-float me-3"></i>
+              <span class="d-none d-xl-block">
+                Lists
+              </span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action wd-list-item">
+              <i class="fas fa-user wd-float me-3"></i>
+              <span class="d-none d-xl-block">
+                Profile
+              </span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action wd-list-item">
+              <i class="fas fa-info-circle wd-float me-4"></i>
+              <span class="d-none d-xl-block">
+                More
+              </span>
+            </a>
+            <button class="btn btn-md btn-primary rounded-pill mt-1">Tweet</button>
+          </div>
+        </div>
+
+
+
+
+<!--        middle-->
+        <div class="col-10 col-sm-10 col-md-11 col-lg-8 col-xl-6 col-xxl-6 wd-light-gray-border-half">
+
+          <div class="wd-padding-5">
+
+            <div class="mb-3 wd-search-area">
+              <!-- search icon -->
+              <i class="fas fa-search wd-search-icon wd-search-icon-add"></i>
+              <!-- search bar -->
+              <input  class="wd-search-bar wd-darkgray wd-text-white-color" type="text" placeholder="Search Twitter">
+
+              <!-- gear -->
+              <i class="fas fa-cog wd-text-white-color wd-search-cog-margin"></i>
+
+            </div>
+
+            <!--          tabs-->
+              <ul class="nav nav-tabs wd-nav-tab">
+                <li class="nav-item">
+                  <a class="nav-link wd-nav-link-added" href="#">For you</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link wd-nav-link-added" href="#">Trending</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link wd-nav-link-added" href="#">COVID-19</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link wd-nav-link-added" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link wd-nav-link-added" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-sm-block d-none wd-nav-link-added" href="#">Entertaining</a>
+                </li>
+              </ul>
+
+
+
+          </div>
+
+
+<!--          need to add text in imgm but somehow will appear at strange places-->
+          <div class="wd-img-div wd-light-gray-border-upper">
+            <img class="img-fluid" src="images/bts_coldplay.jpg" alt="popular image">
+            <div class="wd-img-txt">
+              <p>
+                <span class="wd-img-txt-title">Music . Last night</span>
+                <br>
+                <span class="wd-img-txt-info">BTS and Coldplay release their new song, My Universe</span>
+              </p>
+
+            </div>
+          </div>
+
+
+            <!--  popular tweets-->
+
+          <div>
+
+            <!--            tweet 1-->
+            <div class="row wd-tweet wd-light-gray-border-upper">
+              <div class="col-10">
+                <p class="wd-light-gray wd-opacity-50">Trending in R&B & soul</p>
+                <p class="wd-tweet-title">R Kelly</p>
+                <p class="wd-light-gray wd-opacity-50">
+                  18.2K Tweets
+                </p>
+              </div>
+
+              <div class="col-2" style="position: relative;">
+                <i class="fas fa-ellipsis-h fa-2x wd-text-darkgray" style="position: absolute; right: 5px;"></i>
+              </div>
+
+            </div>
+
+            <!--            tweet 2 -->
+            <div class="row wd-tweet wd-light-gray-border-upper">
+              <div class="col-10">
+                <p class="wd-light-gray wd-opacity-50">Trending in R&B & soul</p>
+                <p class="wd-tweet-title">Chloe</p>
+                <p class="wd-light-gray wd-opacity-50">
+                  Trending with <span><a href="#">Halle</a></span>
+                </p>
+              </div>
+
+              <div class="col-2" style="position: relative;">
+                <i class="fas fa-ellipsis-h fa-2x wd-text-darkgray" style="position: absolute; right: 5px;"></i>
+              </div>
+
+            </div>
+
+            <!--            tweet 3 -->
+            <div class="row wd-tweet wd-light-gray-border-upper">
+              <div class="col-9">
+                <p>
+                  <span class="wd-tweet-title">
+                    T The Times
+                    <i class="fas fa-check-circle wd-verifed-fa"></i>
+                  </span>
+                  <span class="wd-light-gray wd-opacity-50">
+                    September 24, 2021
+                  </span>
+                </p>q
+
+                <p class="wd-tweet-title">Stanley Tucci: 'Food or sex? That's the cruellest question...'</p>
+
+              </div>
+
+              <div class="col-3" style="position: relative;">
+                <img class="wd-tweet-img" src="images/ceo.jpg" alt="random ceo" style="border-radius: 20px; position: absolute; right: 5px; top: 10px;">
+              </div>
+
+            </div>
+          </div>
+
+      </div>
+
+<!--        right hand side-->
+<!--        sec3 disappears after we get to medium-->
+        <div class="d-none d-lg-block col-lg-3 col-xl-4 col-xxl-4">
+            <ul class="list-group wd-rounded">
+<!--              who to follow-->
+              <li class="list-group-item wd-darkgray">
+                <span class="wd-follow-title">Who to follow</span>
+              </li>
+
+<!--              suggestion1-->
+              <li class="list-group-item wd-darkgray">
+                <div class="row">
+
+                  <div class="col-xl-2 col-lg-4 align-middle">
+                    <img class="wd-recommend-companies" src="images/babylonbee.jpg" alt="babylon bee">
+                  </div>
+
+                  <div class="col-xl-7 col-lg-4 align-middle">
+                    <p>
+                      <span class="font-weight-bolder wd-text-white-color">The Babylon Bee</span>
+                      <i class="fas fa-check-circle wd-verifed-fa wd-text-white-color"></i><br>
+                      <span class="wd-light-gray wd-opacity-50">@TheBabylonBee</span>
+                    </p>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-4 align-middle">
+                    <button class="btn btn-light wd-follow-button wd-rounded">Follow</button>
+                  </div>
+                </div>
+              </li>
+
+
+
+              <!--              suggestion2-->
+              <li class="list-group-item wd-darkgray">
+                <div class="row">
+
+                  <div class="col-xl-2 col-lg-4 align-middle">
+                    <img class="wd-recommend-companies" src="images/jack.jpg" alt="jack posobiec">
+                  </div>
+
+                  <div class="col-xl-7 col-lg-4 align-middle">
+                    <p>
+                      <span class="font-weight-bolder wd-text-white-color">jack Posobiec
+                      <img class="wd-small-decor" src="images/americaFlag.jpg" alt="americaFlag">
+                      </span>
+                      <i class="fas fa-check-circle wd-verifed-fa wd-text-white-color"></i><br>
+                      <span class="wd-light-gray wd-opacity-50">@JackPosobiec</span>
+                    </p>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-4 align-middle">
+                    <button class="btn btn-light wd-follow-button wd-rounded">Follow</button>
+                  </div>
+                </div>
+              </li>
+
+              <li class="list-group-item wd-darkgray">
+                <a class="wd-no-underline" href="#">Show more</a>
+              </li>
+
+            </ul>
+
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+  </body>
+
+</html>
+
+
