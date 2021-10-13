@@ -1,0 +1,364 @@
+<!--font awesome-->
+<!--https://docs.google.com/presentation/d/1H2DK-UDJd-iHOpgKGkqycXtNMhCQGv26TsXC8brMM_o/edit#slide=id.g40e9ecc724_0_0-->
+<!--bootstrap-->
+<!--https://docs.google.com/presentation/d/1Vjc1ePHtNMKPWqQUSqBVK-1Jd_5ByngOj6jTUcNXY-c/edit#slide=id.g40ec69bab2_0_20-->
+
+
+<!--some problems
+
+cant fit in one row in left
+grey bolder out of bounds in middle
+will compress strangely in right
+-->
+
+
+
+
+
+<html>
+  <head>
+    <title>Explore</title>
+    <!--    bootstrap cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!--    font awesome cdn-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <!--  my css-->
+    <link href="css/explore.css" rel="stylesheet"/>
+  </head>
+
+<!--  <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">-->
+
+  <body class="mt-2">
+    <div class="container">
+      <div class="row">
+
+<!--        left-->
+<!--        needs to align center and make text and icon inline-->
+        <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-2 col-xxl-2">
+          <!--list of hyperlinks-->
+          <div class="list-group">
+<!--            twitter-->
+            <a href="#" class="list-group-item list-group-item-action aria-current="true"">
+              <i class="fab fa-twitter"></i>
+            </a>
+<!--            Home-->
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-home wd-float me-2"></i>
+              <span class="d-none d-xl-block">
+                Home
+              </span>
+            </a>
+<!--Explore-->
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-hashtag wd-float me-2"></i>
+              <span class="d-none d-xl-block">
+                Explore
+              </span>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-bell wd-float me-2"></i>
+              <span class="d-none d-xl-block">
+                Notifications
+              </span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-envelope wd-float me-2"></i>
+              <span class="d-none d-xl-block">
+                Messages
+              </span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-bookmark wd-float me-2"></i>
+              <span class="d-none d-xl-block">
+                Bookmarks
+              </span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-list wd-float me-2"></i>
+              <span class="d-none d-xl-block">
+                Lists
+              </span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-user wd-float me-2"></i>
+              <span class="d-none d-xl-block">
+                Profile
+              </span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-info-circle wd-float me-2"></i>
+              <span class="d-none d-xl-block">
+                More
+              </span>
+            </a>
+            <button class="btn btn-md btn-primary rounded-pill mt-1">Tweet</button>
+          </div>
+        </div>
+
+
+<!--        middle-->
+        <div class="col-10 col-sm-10 col-md-11 col-lg-8 col-xl-6 col-xxl-6">
+
+
+          <div class="mb-3 wd-search-area">
+            <!-- search icon -->
+            <i class="fas fa-search wd-search-icon"></i>
+            <!-- search bar -->
+            <input  class="wd-search-bar" type="text" placeholder="Search Twitter">
+
+            <!-- gear -->
+            <i class="fa fa-cog"></i>
+
+          </div>
+
+          <!--          tabs-->
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">For you</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trending</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-sm-block d-none" href="#">Entertaining</a>
+              </li>
+            </ul>
+<!--          need to add text in imgm but somehow will appear at strange places-->
+          <div class="wd-img-div">
+            <img class="img-fluid" src="images/spaceX.jpg" alt="popular image">
+            <p class="wd-img-txt wd-img-txt-title">SpaceX's Starship</p>
+          </div>
+
+
+            <!--  popular tweets-->
+
+          <div class="wd-light-gray-border">
+
+            <!--            tweet 1-->
+            <div class="row wd-tweet">
+              <div class="col-9">
+                <p class="wd-light-gray wd-opacity-70">Web Development</p>
+                <p class="font-weight-bolder">ReactJS <i class="fas fa-check-circle wd-verifed-fa"></i><span class="wd-light-grey"> - 2h</span></p>
+                <p class="font-weight-bolder">
+                  React.js is a component based front end library that makes it very
+                  easy to build single page applications or SPAs
+                </p>
+              </div>
+
+              <div class="col-3 align-self-center justify-content-center">
+                <img class="wd-tweet-img" src="images/react.png" alt="react icon">
+              </div>
+            </div>
+
+            <!--            tweet 2-->
+            <div class="row wd-tweet wd-light-gray-upper">
+              <div class="col-9">
+                <p class="font-weight-bolder">JavaScript <i class="fas fa-check-circle wd-verifed-fa"></i><span class="wd-light-grey"> - 2h</span></p>
+                <p class="font-weight-bolder">
+                  JavaScript is a programming language that can run on browsers as well as desktops
+                </p>
+                <p class="wd-light-gray wd-opacity-70">123K Tweets</p>
+              </div>
+
+              <div class="col-3 align-self-center justify-content-center">
+                <img class="wd-tweet-img" src="images/js.png" alt="js icon">
+              </div>
+            </div>
+
+            <!--            tweet 3-->
+            <div class="row wd-tweet wd-light-gray-upper">
+              <div class="col-9">
+                <p class="wd-light-gray wd-opacity-70">Web Development</p>
+                <p class="font-weight-bolder">jQuery</p>
+                <p class="wd-light-gray wd-opacity-70">123K Tweets</p>
+              </div>
+
+              <div class="col-3 align-self-center justify-content-center">
+                <img class="wd-tweet-img" src="images/jquery.png" alt="jquery icon">
+              </div>
+            </div>
+
+
+            <!--            tweet 4-->
+            <div class="row wd-tweet wd-light-gray-upper">
+              <div class="col-9">
+                <p class="wd-light-gray wd-opacity-70">Web Development</p>
+                <p class="font-weight-bolder">NodeJS  <i class="fas fa-check-circle wd-verifed-fa"></i><span class="wd-light-grey"> - 2h</span></p>
+                <p class="wd-light-gray wd-opacity-70">123K Tweets</p>
+              </div>
+
+              <div class="col-3 align-self-center justify-content-center">
+                <img class="wd-tweet-img" src="images/nodeJS.png" alt="nodeJS icon">
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+<!--        right hand side-->
+<!--        sec3 disappears after we get to medium-->
+        <div class="d-none d-lg-block col-lg-3 col-xl-4 col-xxl-4">
+          <ul class="list-group">
+            <li class="list-group-item">
+              What To follow
+            </li>
+
+<!--java-->
+            <li class="list-group-item">
+              <div class="row">
+
+                <div class="col-xl-2 col-lg-4 align-middle">
+                  <img class="wd-recommend-companies" src="images/java.png" alt="company image">
+                </div>
+
+                <div class="col-xl-7 col-lg-4 align-middle">
+                  <p>
+                    <span class="font-weight-bolder">Java</span>
+                    <i class="fas fa-check-circle wd-verifed-fa"></i><br>
+                    @Java
+                  </p>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 align-middle">
+                  <button class="btn btn-primary wd-follow-button">Follow</button>
+                </div>
+              </div>
+
+            </li>
+<!--            relativity space-->
+            <li class="list-group-item">
+              <div class="row">
+
+                <div class="col-xl-2 col-lg-4 align-middle">
+                  <img class="wd-recommend-companies" src="images/relativitySpace.jpeg" alt="company image">
+                </div>
+
+                <div class="col-xl-7 col-lg-4 align-middle">
+                  <p>
+                    <span class="font-weight-bolder">Relativity Space</span>
+                    <i class="fas fa-check-circle wd-verifed-fa"></i><br>
+                    @relativityspace
+                  </p>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 align-middle">
+                  <button class="btn btn-primary wd-follow-button">Follow</button>
+                </div>
+              </div>
+            </li>
+<!--virgin galactic-->
+
+            <li class="list-group-item">
+              <div class="row">
+
+                <div class="col-xl-2 col-lg-4 align-middle">
+                  <img class="wd-recommend-companies" src="images/virgin.svg" alt="company image">
+                </div>
+
+                <div class="col-xl-7 col-lg-4 align-middle">
+                  <p>
+                    <span class="font-weight-bolder">Virgin Galactic</span>
+                    <i class="fas fa-check-circle wd-verifed-fa"></i><br>
+                    @virgingalactic
+                  </p>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 align-middle">
+                  <button class="btn btn-primary wd-follow-button">Follow</button>
+                </div>
+              </div>
+            </li>
+
+
+            <!--nasa -->
+
+            <li class="list-group-item">
+              <div class="row">
+
+                <div class="col-xl-2 col-lg-4 align-middle">
+                  <img class="wd-recommend-companies" src="images/nasa.png" alt="company image">
+                </div>
+
+                <div class="col-xl-7 col-lg-4 align-middle">
+                  <p>
+                    <span class="font-weight-bolder">NASA</span>
+                    <i class="fas fa-check-circle wd-verifed-fa"></i><br>
+                    @NASA
+                  </p>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 align-middle">
+                  <button class="btn btn-primary wd-follow-button">Follow</button>
+                </div>
+              </div>
+            </li>
+            <!-- tesla -->
+
+            <li class="list-group-item">
+              <div class="row">
+
+                <div class="col-xl-2 col-lg-4 align-middle">
+                  <img class="wd-recommend-companies" src="images/tesla.png" alt="company image">
+                </div>
+
+                <div class="col-xl-7 col-lg-4 align-middle">
+                  <p>
+                    <span class="font-weight-bolder">Tesla</span>
+                    <i class="fas fa-check-circle wd-verifed-fa"></i><br>
+                    @Tesla
+                  </p>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 align-middle">
+                  <button class="btn btn-primary wd-follow-button">Follow</button>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+
+
+
+
+
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+  </body>
+
+</html>
+
+

@@ -1,0 +1,167 @@
+/* -------- global --------*/
+body{
+	background-color: black;
+	font-family: sans-serif;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.wd-text-white{
+	color: white;
+}
+
+
+.wd-text-lightgray{
+	color: lightgray;
+}
+
+
+.wd-text-red{
+	color: red;
+}
+
+
+.wd-text-opacity-half{
+	opacity: 0.5;
+}
+
+
+.wd-gray-border{
+	/*this is the rgb color for lightgray*/
+	border: 1px solid rgb(82.7, 82.7, 82.7, 0.7);
+}
+
+.wd-rounded-border{
+	border-radius: 20px;
+}
+
+
+.wd-padding-12{
+	padding: 12px;
+}
+
+.wd-padding-left-right-16{
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+
+
+
+/* ---------- */
+.wd-bookmark-header{
+	margin-left: 16px;
+	margin-top: 12px;
+
+
+}
+
+
+.wd-bookmark-header-title{
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+}
+
+.wd-bookmark-header-username{
+	color: lightgray;
+	font-size: 13px;
+}
+
+
+/* ---------- */
+.wd-bookmarks{
+	position: relative;
+}
+
+
+
+/*for the whole bookmark*/
+.wd-bookmark-sample{
+	margin-top: 12px;
+	display: inline-block;
+}
+
+
+
+/* bookmark user img photo */
+.wd-bookmark-usr-img{
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	margin-left: 16px;
+	margin-top: 12px;
+	margin-right: 12px;
+	float: left;
+}
+
+
+/* bookmark user response (whole div) */
+.wd-bookmark-user-response{
+	max-width:  506px;
+	float: left;
+	margin-left: 12px;
+}
+
+
+.wd-bookmark-otheruser{
+	font-size: 15px;
+	padding-bottom: 0px;
+}
+
+
+.wd-bookmark-otheruser-text{
+	margin-top: -8px;
+}
+
+
+
+/** ------------ user responsed to post ------- */
+
+.wd-bookmark-post-image{
+	width: 504px;
+	height: 264px;
+	border-top-left-radius: 5%;
+	border-top-right-radius: 5%;
+	text-align: center;
+}/*bookmark post (img, title, text)*/
+
+
+
+.wd-bookmark-post-title{
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+}/*specify border and padding here*/
+
+
+.wd-bookmark-post-text{
+	color: lightgray;
+	font-size: 15px;
+}
+
+
+/*icons*/
+.wd-icons{
+	margin-top: 12px;   
+}
+
+
+.wd-icon-spaceout{
+	text-decoration: none;
+	float: left;
+	width: 25%;
+}
+
+
+.wd-icon-space{
+	margin-left: 12px;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,143 @@
+/*what to follow portion*/
+.wd-recommend-companies{
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+}
+
+.wd-follow-button{
+  border-radius: 40px;
+  width: 100%;
+}
+
+
+
+/*search middle portion*/
+.wd-tweet-img{
+  height:100px;
+  width:100px;
+  border-radius: 5px;
+}
+
+
+.wd-light-gray{
+  color:lightgray;
+}
+
+.wd-opacity-70{
+  opacity:70%;
+}
+
+.wd-opacity-50{
+  opacity:50%;
+}
+
+
+.wd-light-gray-border{
+  border: 1px solid lightgray;
+}
+
+.wd-light-gray-upper{
+  border-top: 1px solid lightgray;
+}
+
+
+
+.wd-search-area{
+  position:relative;
+}
+
+
+.wd-search-icon{
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+
+
+
+.wd-search-bar{
+  height: 40px;
+  width: 90%;
+  border-radius: 40px;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 18px;
+  padding-left:50px;
+  outline: none;
+}
+
+
+.fa-cog{
+  color:blue;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+.wd-img-div{
+  position:relative;
+}
+
+
+.wd-img-txt{
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.wd-img-txt-info{
+  font-size: 30px;
+}
+
+
+.wd-img-txt-title{
+  font-size: 10px;
+}
+
+
+
+.wd-tweet-img{
+  height: 100px;
+  width: 100px;
+}
+
+
+.wd-tweet{
+  padding: 10px;
+}
+
+.wd-verifed-fa{
+  margin-left: 5px;
+}
+
+.fa-cog{
+  font-size:20px;
+}
+
+.wd-float{
+  float: left;
+  width: 10%;
+  padding-top:3px;
+}
+
+
+/*media query*/
+@media screen and (max-width: 540px){
+  .wd-tweet-img{
+    height: 80px;
+    width: 80px;
+  }
+}
+
+
+
+
+
+
+
+
+
