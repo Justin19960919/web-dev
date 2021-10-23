@@ -1,38 +1,620 @@
-.App {
-  text-align: center;
+
+
+
+/* explore.css */
+.wd-recommend-companies{
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wd-follow-button{
+  border-radius: 40px;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+/*search middle portion*/
+.wd-tweet-img{
+  height:100px;
+  width:100px;
+  border-radius: 5px;
+}
+
+
+.wd-light-gray{
+  color:lightgray;
+}
+
+.wd-opacity-70{
+  opacity:70%;
+}
+
+.wd-opacity-50{
+  opacity:50%;
+}
+
+
+.wd-light-gray-border{
+  border: 1px solid lightgray;
+}
+
+.wd-light-gray-upper{
+  border-top: 1px solid lightgray;
+}
+
+
+
+.wd-search-area{
+  position:relative;
+}
+
+
+.wd-search-icon{
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+
+
+
+.wd-search-bar{
+  height: 40px;
+  width: 90%;
+  border-radius: 40px;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 18px;
+  padding-left:50px;
+  outline: none;
+}
+
+
+.fa-cog{
+  color:blue;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+.wd-img-div{
+  position:relative;
+}
+
+
+.wd-img-txt{
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.wd-img-txt-info{
+  font-size: 30px;
+}
+
+
+.wd-img-txt-title{
+  font-size: 10px;
+}
+
+
+
+.wd-tweet-img{
+  height: 100px;
+  width: 100px;
+}
+
+
+.wd-tweet{
+  padding: 10px;
+}
+
+.wd-verifed-fa{
+  margin-left: 5px;
+}
+
+.fa-cog{
+  font-size:20px;
+}
+
+.wd-float{
+  float: left;
+  width: 10%;
+  padding-top:3px;
+}
+
+
+/*media query*/
+@media screen and (max-width: 540px){
+  .wd-tweet-img{
+    height: 80px;
+    width: 80px;
   }
+  /* -------- global --------*/
+  body{
+    background-color: black;
+    font-family: sans-serif;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .wd-text-white{
+    color: white;
+  }
+
+
+  .wd-text-lightgray{
+    color: lightgray;
+  }
+
+
+  .wd-text-red{
+    color: red;
+  }
+
+
+  .wd-text-opacity-half{
+    opacity: 0.5;
+  }
+
+
+  .wd-gray-border{
+    /*this is the rgb color for lightgray*/
+    border: 1px solid rgb(82.7, 82.7, 82.7, 0.7);
+  }
+
+  .wd-rounded-border{
+    border-radius: 20px;
+  }
+
+
+  .wd-padding-12{
+    padding: 12px;
+  }
+
+  .wd-padding-left-right-16{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+
+
+
+  /* ---------- */
+  .wd-bookmark-header{
+    margin-left: 16px;
+    margin-top: 12px;
+
+
+  }
+
+
+  .wd-bookmark-header-title{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .wd-bookmark-header-username{
+    color: lightgray;
+    font-size: 13px;
+  }
+
+
+  /* ---------- */
+  .wd-bookmarks{
+    position: relative;
+  }
+
+
+
+  /*for the whole bookmark*/
+  .wd-bookmark-sample{
+    margin-top: 12px;
+  }
+
+
+
+  /* bookmark user img photo */
+  .wd-bookmark-usr-img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-left: 16px;
+    margin-top: 12px;
+    margin-right: 12px;
+    float: left;
+  }
+
+
+  /* bookmark user response (whole div) */
+  .wd-bookmark-user-response{
+    max-width:  506px;
+    float: left;
+    margin-left: 12px;
+  }
+
+
+  .wd-bookmark-otheruser{
+    font-size: 15px;
+    padding-bottom: 0px;
+  }
+
+
+  .wd-bookmark-otheruser-text{
+    margin-top: -8px;
+  }
+
+
+
+  /** ------------ user responsed to post ------- */
+
+  .wd-bookmark-post-image{
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    text-align: center;
+  }/*bookmark post (img, title, text)*/
+
+
+
+  .wd-bookmark-post-title{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+  }/*specify border and padding here*/
+
+
+  .wd-bookmark-post-text{
+    color: lightgray;
+    font-size: 15px;
+  }
+
+
+  /*icons*/
+  .wd-icons{
+    margin-top: 12px;
+  }
+
+
+  .wd-icon-spaceout{
+    text-decoration: none;
+    float: left;
+    width: 25%;
+  }
+
+
+  .wd-icon-space{
+    margin-left: 12px;
+  }
+
+
+
+
+
+
+
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* home.css */
+
+/* -------- global --------*/
+body{
+  background-color: black;
+  font-family: sans-serif;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.wd-text-white{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.wd-text-lightgray{
+  color: lightgray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.wd-text-red{
+  color: red;
 }
+
+
+.wd-text-opacity-half{
+  opacity: 0.5;
+}
+
+
+.wd-gray-border{
+  /*this is the rgb color for lightgray*/
+  border: 1px solid rgb(82.7, 82.7, 82.7, 0.7);
+}
+
+.wd-rounded-border{
+  border-radius: 20px;
+}
+
+
+.wd-padding-12{
+  padding: 12px;
+}
+
+.wd-padding-left-right-16{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+
+
+/* ---------- */
+.wd-bookmark-header{
+  margin-left: 16px;
+  margin-top: 12px;
+
+
+}
+
+
+.wd-bookmark-header-title{
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.wd-bookmark-header-username{
+  color: lightgray;
+  font-size: 13px;
+}
+
+
+
+/*bookmark css in home screen*/
+
+/*for the whole bookmark*/
+.wd-bookmark-sample{
+  margin-top: 12px;
+}
+
+
+
+/* bookmark user img photo */
+.wd-bookmark-usr-img{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-left: 16px;
+  margin-top: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+
+/* bookmark user response (whole div) */
+.wd-bookmark-user-response{
+  max-width:  506px;
+  margin-left: 12px;
+  float: left;
+}
+
+
+.wd-bookmark-otheruser{
+  font-size: 15px;
+  padding-bottom: 0px;
+}
+
+
+.wd-bookmark-otheruser-text{
+  margin-top: -8px;
+}
+
+
+
+/** ------------ user responsed to post ------- */
+
+.wd-bookmark-post-image{
+  width: 504px;
+  height: 264px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  text-align: center;
+}/*bookmark post (img, title, text)*/
+
+
+
+.wd-bookmark-post-title{
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}/*specify border and padding here*/
+
+
+.wd-bookmark-post-text{
+  color: lightgray;
+  font-size: 15px;
+}
+
+
+/*icons*/
+.wd-icons{
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+
+.wd-icon-spaceout{
+  text-decoration: none;
+  float: left;
+  width: 25%;
+}
+
+
+.wd-icon-space{
+  margin-left: 12px;
+}
+
+
+
+
+/*override.csss*/
+
+/*
+Background colors
+Button colors
+Font colors
+Icon colors
+Highlight colors
+Border colors, widths and styles
+Input field colors
+*/
+
+
+body{
+  background-color: black;
+}
+
+/*additional styling for left navigation*/
+.wd-list-twitter-icon{
+  font-size: 25px;
+  padding-botton: 5px;
+}
+
+
+.wd-list-item{
+  background-color: black;
+  color: white;
+  border:none;
+  font-size: 18px;
+}
+
+
+
+/*middle*/
+.wd-darkgray{
+  background-color: rgba(173,181,189, 0.4);
+}
+
+.wd-text-darkgray{
+  color: rgba(173,181,189, 0.4);
+}
+
+
+.wd-text-white-color{
+  color: white;
+}
+
+.wd-search-icon-add{
+  color: lightgray;
+  opacity:0.5;
+  padding-top:2px;
+}
+
+
+.wd-search-cog-margin{
+  margin-left: 10px;
+}
+
+/*navtabs*/
+
+.wd-nav-tab{
+  border:none;
+}
+
+.wd-nav-link-added{
+  color: lightgray;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+
+
+
+.wd-light-gray-border-half{
+  border:1px solid rgba(211,211,211, 0.5);
+}
+
+
+.wd-light-gray-border-upper{
+  border-top:1px solid rgba(211,211,211, 0.5);
+}
+
+
+.wd-light-gray-border-bottom{
+  border-bottom:1px solid rgba(211,211,211, 0.5);
+}
+
+
+
+/*tweets*/
+.wd-tweet-title{
+  color: white;
+  font-size: 20px;
+}
+
+
+/*who to follow*/
+.wd-follow-title{
+  color: white;
+  font-size: 20px;
+}
+
+.wd-small-decor{
+  width: 20px;
+  height: 10px;
+}
+
+
+.wd-rounded{
+  border-radius: 20px;
+}
+
+.wd-no-underline{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
