@@ -37,10 +37,8 @@ const tweets = (state = tweets_, action) => {
       return(
           [newTweet, ...state]
       );
-      break;
     case 'delete-tweet':
       return state.filter(tweet => tweet._id !== action.tweet._id);
-      break;
     case 'like-tweet':
       // use find method to find the corresponding tweet
       const likedTweet = state.find(tweet => tweet === action.tweet);
@@ -53,7 +51,6 @@ const tweets = (state = tweets_, action) => {
         likedTweet.loveNumber ++;
       }
       return state;
-      break;
       default:
       return(state);
   }

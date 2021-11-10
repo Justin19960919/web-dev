@@ -21,15 +21,15 @@ const splitName = (fullName) => {
     firstName = "";
     lastName = "";
   }
-  if(arr.length == 1){
+  if(arr.length === 1){
     firstName = arr[0];
     lastName = "";
   }
-  else if(arr.length == 2){
+  else if(arr.length === 2){
     firstName = arr[0];
     lastName = arr[1];
   }
-  else if(arr.length == 3){
+  else if(arr.length === 3){
     firstName = arr[0] + " " + arr[1];
     lastName = arr[2];
   }
@@ -56,10 +56,8 @@ const profile = (state = profileData, action) => {
       };
       console.log(modifiedProfile);
       return modifiedProfile;
-      break;
     default:
       return state;
-      break;
   }
 }
 

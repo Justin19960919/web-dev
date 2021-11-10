@@ -1,6 +1,6 @@
 // Provider
 import React from "react";
-import {BrowserRouter, Link, Route} from "react-router-dom";
+import {Route} from "react-router-dom";
 
 
 import ExploreScreen from "./ExploreScreen/ExploreScreen.js";
