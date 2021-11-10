@@ -218,7 +218,6 @@
   }
 
 
-
   /* bookmark user img photo */
   .wd-bookmark-usr-img{
     width: 48px;
@@ -238,12 +237,10 @@
     margin-left: 12px;
   }
 
-
   .wd-bookmark-otheruser{
     font-size: 15px;
     padding-bottom: 0px;
   }
-
 
   .wd-bookmark-otheruser-text{
     margin-top: -8px;
@@ -251,7 +248,7 @@
 
 
 
-  /** ------------ user responsed to post ------- */
+  /** ------------ user response to post ------- */
 
   .wd-bookmark-post-image{
     width: 504px;
@@ -358,8 +355,6 @@ body{
 .wd-bookmark-header{
   margin-left: 16px;
   margin-top: 12px;
-
-
 }
 
 
@@ -401,6 +396,7 @@ body{
 .wd-bookmark-user-response{
   max-width:  506px;
   margin-left: 12px;
+  position: relative;
   float: left;
 }
 
