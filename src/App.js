@@ -12,11 +12,11 @@ import HelloWorld from "./components/a6/HelloWorld";
 // import Practice from "./components/a6/Practice";
 // import Build from "./components/a6/Build";
 
-import Practice from "./components/a7/Practice";
-import Build from "./components/a7/Build";
+import Practice from "./components/a8/Practice";
+import Build from "./components/a8/Build";
 
-import HomeScreen from "./components/a7/Build/HomeScreen";
-import ExploreScreen from "./components/a7/Build/ExploreScreen/ExploreScreen.js";
+import HomeScreen from "./components/a8/Build/HomeScreen";
+import ExploreScreen from "./components/a8/Build/ExploreScreen/ExploreScreen.js";
 
 //
 import './App.css';
@@ -26,35 +26,16 @@ import React from "react";
 const App = () => {
   return (
       <>
-      <BrowserRouter>
-        <Route path="/a6/twitter/home">
-          <HomeScreen/>
-        </Route>
-
-        <Route path="/a6/twitter/explore">
-          <ExploreScreen/>
-        </Route>
-
-
-        <Route path="/a6/practice" exact={true}>
-          <Practice/>
-        </Route>
-
-        <Route path="/a6/hello" exact={true}>
-          <HelloWorld/>
-        </Route>
-
-        {/*a7 routes*/}
-
+        <BrowserRouter>
         <Route
-          path = {["/", "/a7", "/a7/practice"]}
-          exact = {true}
+            path = {["/", "/a8", "/a8/practice"]}
+            exact = {true}
         >
           <Practice/>
         </Route>
 
         <Route
-          path="/a7/twitter"
+            path="/a8/twitter"
         >
           <Build/>
         </Route>

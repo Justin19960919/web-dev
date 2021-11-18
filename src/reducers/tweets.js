@@ -1,4 +1,3 @@
-import tweets_ from "./data/tweets.json";
 /*
 Relative fields --
 userImg
@@ -13,10 +12,17 @@ commentNumber
 retweetNumber
 loveNumber
 * */
-const tweets = (state = tweets_, action) => {
+const tweets = (state = [], action) => {
   switch(action.type){
+    case 'fetch-all-tweets':
+      //console.log(`rendering data from server ${action.tweets}`)
+      return(
+        action.tweets
+      );
     case 'create-tweet':
       // create new tweet object after receiving dispatch
+      /*
+      // this was used in redux managements
       const newTweet = {
         _id: (new Date()).getTime() + "",
         username: "Elon Musk",
@@ -34,15 +40,17 @@ const tweets = (state = tweets_, action) => {
         loveNumber: 789,
         liked: false
       };
+      */
       return(
-          [newTweet, ...state]
+          action.tweets
       );
     case 'delete-tweet':
       return state.filter(tweet => tweet._id !== action.tweet._id);
-    case 'like-tweet':
+
+
+      case 'like-tweet':
       // use find method to find the corresponding tweet
-      const likedTweet = state.find(tweet => tweet === action.tweet);
-      console.log(likedTweet);
+      const likedTweet = state.find(tweet => tweet._id === action.tweet._id);
       if(likedTweet.liked === true){
         likedTweet.liked = false;
         likedTweet.loveNumber --;

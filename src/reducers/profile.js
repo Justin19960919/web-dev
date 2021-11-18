@@ -1,19 +1,3 @@
-const profileData = {
-  firstName: "Chieh Lin",
-  lastName: "Lee",
-  handle: "jclee",
-  profilePicture: "/images/profile.jpg",
-  bannerPicture: "/images/banner.jpg",
-  bio: "MSCS @ Northeastern University, aspiring software engineer",
-  website: "https://justin19960919.github.io/personal-site/",
-  location: "Seattle",
-  dateOfBirth: "09/19/1996",
-  dateJoined: "11/2021",
-  numTweets: 5196,
-  followingCount: 312,
-  followersCount: 180
-};
-
 const splitName = (fullName) => {
   let arr = fullName.split(" ");
   let firstName, lastName;
@@ -38,14 +22,15 @@ const splitName = (fullName) => {
 
 
 
-const profile = (state = profileData, action) => {
+const profile = (state = {}, action) => {
   switch(action.type){
+    case 'get-profile':
+      return action.profile;
+
     case "modify-profile":
-      const newProfile = action.newProfile;
-
+      const newProfile = action.profile;
+      // console.log(`modifed profile is sent to reducer: ${newProfile}`);
       const nameResult = splitName(newProfile.fullName);
-      console.log(nameResult);
-
       const modifiedProfile = {
         ...state,
         firstName: nameResult[0],
@@ -54,7 +39,7 @@ const profile = (state = profileData, action) => {
         location: newProfile.location,
         website: newProfile.website
       };
-      console.log(modifiedProfile);
+      // console.log(`modified profile: ${modifiedProfile}`);
       return modifiedProfile;
     default:
       return state;
