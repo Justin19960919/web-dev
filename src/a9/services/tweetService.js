@@ -21,10 +21,10 @@ export const postNewTweet = (dispatch, newTweet) => {
       "content-type": "application/json"
     }
   })
-    .then(response => response.json())
-    .then(newTweet => dispatch({
+    .then(response => response.json())// get stream and convert to json
+    .then(responseTweet => dispatch({
       type: 'create-tweet',
-      newTweet
+      newTweet: responseTweet
     })
     );
 }
@@ -44,8 +44,13 @@ export const deleteTweet = (dispatch, tweet) => {
 
 
 export const likeTweet = (dispatch, tweet) => {
+  console.log("calling put to db");
   fetch(`${getTweetAPI}/${tweet._id}/like`, {
-    method: "PUT"
+    method: "PUT",
+    body: JSON.stringify(tweet),
+    headers:{
+      "content-type": "application/json"
+    }
   })
   .then(response => dispatch({
     type: "like-tweet",
