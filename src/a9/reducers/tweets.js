@@ -19,31 +19,31 @@ const tweets = (state = [], action) => {
       return(
         action.tweets
       );
+
     case 'create-tweet':
       // create new tweet object after receiving dispatch
-      /*
       // this was used in redux managements
-      const newTweet = {
-        _id: (new Date()).getTime() + "",
-        username: "Elon Musk",
-        userImg: "/images/elonMusk.jpg",
-        userAccount: "elonmusk",
-        time: "2h",
-        response: action.tweet,
-        reference: {
-          imgSource:"/images/default.jpg",
-          title: "",
-          content: ""
-        },
-        commentNumber: 123,
-        retweetNumber: 456,
-        loveNumber: 789,
-        liked: false
-      };
-      */
-      return(
-          action.tweets
-      );
+      // const newTweet = {
+      //   _id: (new Date()).getTime() + "",
+      //   username: "Elon Musk",
+      //   userImg: "/images/elonMusk.jpg",
+      //   userAccount: "elonmusk",
+      //   time: "2h",
+      //   response: action.tweet,
+      //   reference: {
+      //     imgSource:"/images/default.jpg",
+      //     title: "",
+      //     content: ""
+      //   },
+      //   commentNumber: 123,
+      //   retweetNumber: 456,
+      //   loveNumber: 789,
+      //   liked: false
+      // };
+      // console.log(`state:  ${state}, typeof state: ${typeof(state)}, object: ${JSON.stringify(state)}`);
+      const added = [action.newTweet, ...state];
+      return added;
+
     case 'delete-tweet':
       return state.filter(tweet => tweet._id !== action.tweet._id);
 

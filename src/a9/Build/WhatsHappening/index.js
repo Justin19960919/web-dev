@@ -39,7 +39,7 @@ const WhatsHappening = () => {
       retweetNumber: 0,
       loveNumber: 0
     };
-    console.log("created nwe tweet in front end react server...");
+    console.log("created new tweet in front end react server...");
     postNewTweet(dispatch, newTweet);
     setWhatsHappening("");
   }

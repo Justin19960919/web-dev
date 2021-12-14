@@ -98,7 +98,6 @@ const EditProfile = ({setEdit}) => {
       </div>
 
 
-
       {/*form*/}
       <div className="wd-edit-section">
 
